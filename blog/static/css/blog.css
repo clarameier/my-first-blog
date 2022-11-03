@@ -1,0 +1,20 @@
+h1, h2, h3, h4 {
+    color:blueviolet;
+}
+body {
+    padding-left: 15px;
+}
+h1, h2, h3, h4 {
+    color: blueviolet;
+    font-family: 'Secular One', sans-serif;
+}
+.page-header {
+    background-color: black;
+    margin-top: 0;
+    padding: 40px 40px 40px 80px;
+}
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color:blueviolet;
+    font-size: 36pt;
+    text-decoration: none;
+}

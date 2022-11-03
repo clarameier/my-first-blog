@@ -1,9 +1,16 @@
+{% load static %}
 <html>
     <head>
         <title>clarinha's blog</title>
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <h1>blog da clara</h1>
+        <div class="page-header">
+            <h1><a href="/">blog da clara</a></h1>
+        </div>
         <h2>metas e conquistas</h2>
 
         <h3><em>metas:</em></h3>
@@ -26,23 +33,7 @@
 
         <br>
 
-        <h3>um vídeo pra rir quando ficar cansada:</h3>
+        <h3><em>um vídeo pra rir quando ficar cansada:</em></h3>
         <a href="https://youtu.be/gO8N3L_aERg">fire drill</a>
-
-        <br>
-        <br>
-
-        <div>
-            <h4><a href="/">teste blog</a></h4>
-        </div>
-
-        {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
-                <h4><a href="">{{ post.title }}</a></h4>
-                <p>{{ post.text|linebreaksbr }}</p>
-            </div>
-        {% endfor %}
-
     </body>
 </html>
