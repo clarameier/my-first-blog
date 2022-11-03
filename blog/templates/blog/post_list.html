@@ -28,5 +28,21 @@
 
         <h3>um vídeo pra rir quando ficar cansada:</h3>
         <a href="https://youtu.be/gO8N3L_aERg">fire drill</a>
+
+        <br>
+        <br>
+
+        <div>
+            <h4>teste blog</h4>
+        </div>
+
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h4><a href="">{{ post.title }}</a></h4>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+
     </body>
 </html>
