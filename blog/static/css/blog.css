@@ -1,7 +1,7 @@
 h1, h2, h3, h4 {
     color:blueviolet;
 }
-body {
+main {
     padding-left: 15px;
 }
 h1, h2, h3, h4 {
@@ -17,4 +17,7 @@ h1, h2, h3, h4 {
     color:blueviolet;
     font-size: 36pt;
     text-decoration: none;
+}
+#preto {
+    color:black;
 }
